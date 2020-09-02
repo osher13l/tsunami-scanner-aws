@@ -292,5 +292,5 @@ data "aws_iam_policy_document" "tsunami_lambda" {
 }
 
 output "lb_address" {
-  value = aws_alb.application_load_balancer.public_dns
+  value = data.aws_lb.alb_data.dns_name
 }
