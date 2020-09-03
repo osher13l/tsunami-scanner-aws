@@ -10,7 +10,8 @@ def handler(event, context):
     #ip = event["body"]
     alb_dns = os.getenv("alb_dns")
     bucket_name = os.getenv("bucket_name")
-    requests.get("http://{}/scan?ip={}".format(alb_dns, ip), timeout=0.0000000001)
+    try:
+        requests.get("http://{}/scan?ip={}".format(alb_dns, ip), timeout=0.0000000001)
     except requests.exceptions.ReadTimeout: 
         pass
     #scan_results = res.json()
