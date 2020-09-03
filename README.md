@@ -1,4 +1,7 @@
 # tsunami-scanner-aws
+AWS implemantaion for https://github.com/google/tsunami-security-scanner
+Deployment using Terraform.
+
 In order to deploy the system run the following steps:
 
 git clone https://github.com/osher13l/tsunami-scanner-aws.git
