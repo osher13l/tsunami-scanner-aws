@@ -1,3 +1,6 @@
 aws-access-key = ""
 aws-secret-key = ""
 aws-region = ""
+default_subnet_a = ""
+default_subnet_b = ""
+default_subnet_c = ""
